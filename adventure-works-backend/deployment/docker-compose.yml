@@ -125,6 +125,20 @@ services:
         - mongodb
       networks:
         - aw_network
+
+    # Human Resource API
+    human-resource-api:
+      build:
+        context: ../services/human-resource-service
+        dockerfile: Dockerfile
+      container_name: aw_human_resource_api
+      restart: unless-stopped
+      env_file:
+        - .env
+      ports:
+        - "${HUMAN_RESOURCE_API_PORT}:8080"
+      networks:
+        - aw_network
   
     # Monitoring (Prometheus)
     prometheus:

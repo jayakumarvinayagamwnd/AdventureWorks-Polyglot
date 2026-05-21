@@ -9,7 +9,7 @@ The **HR Service** manages human resources data for Adventure Works — employee
 | Item | Value |
 |------|-------|
 | Language | C# |
-| Framework | ASP.NET Core 8 Minimal API |
+| Framework | ASP.NET Core 10 Minimal API |
 | Architecture | Vertical Slice |
 | Database | SQL Server 2022 |
 | Messaging | RabbitMQ |
@@ -29,8 +29,8 @@ hr-service/
 ├── Dockerfile
 ├── .dockerignore
 └── src/
-    └── HR.API/
-        ├── HR.API.csproj
+    └── HumanResource.API/
+        ├── HumanResource.API.csproj
         ├── Program.cs
         └── Features/
             ├── Employees/
